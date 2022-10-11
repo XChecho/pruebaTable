@@ -8,11 +8,13 @@ import Rating from '@mui/material/Rating';
 
 
 const tableItem = ({data}:any) => {
+
   return (
     <tr>
         <td>{data.name}</td>
-        <td><Rating name="read-only" value={data.movie_rating} readOnly/></td>
         <td>{data.age}</td>
+        <td><Rating name="read-only" value={data.rating} readOnly/></td>
+        
         <td>{data.city}</td>
         <td>{data.region}</td>
         <td>

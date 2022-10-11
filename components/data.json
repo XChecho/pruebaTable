@@ -3,7 +3,7 @@
         {
             "name": "John",
             "age": 29,
-            "movie_rating": 4,
+            "rating": 4,
             "city": "Vancouver",
             "region": "British Columbia",
             "country": "Canada"
@@ -11,7 +11,7 @@
         {
             "name": "Sarah",
             "age": 32,
-            "movie_rating": 5,
+            "rating": 5,
             "city": "Frankurt",
             "region": "Hesse",
             "country": "Germany"
@@ -19,7 +19,7 @@
         {
             "name": "Dave",
             "age": 44,
-            "movie_rating": 4,
+            "rating": 4,
             "city": "San Diego",
             "region": "California",
             "country": "United States"

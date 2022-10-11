@@ -2,9 +2,13 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import TableList from '../components/tableList'
-import TableShort from '../components/tableShort'
+import { useMemo } from 'react'
+import dataJson from '../components/data.json';
 
 const Home: NextPage = () => {
+
+    const allData = useMemo(()=> dataJson,[]);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,8 +18,8 @@ const Home: NextPage = () => {
       </Head>
 
       <div>
-        <TableList/>
-        <TableShort/>   
+        <TableList allData = {allData.table1}/>
+        <TableList allData = {allData.table2}/>
       </div>
     </div>
   )
