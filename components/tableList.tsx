@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import TableItem from './tableItem';
 
 const TableList = ({allData}:any) => {
-
     const Headers = Object.keys(allData[0])
 
     return(
@@ -11,11 +10,11 @@ const TableList = ({allData}:any) => {
             <table className='table'>
                 <thead>
                     <tr>
-                        {Headers.map((Header) => <th>{Header}</th>)}
+                        {Headers.map(Header => <th key={Header}>{Header}</th>)}
                     </tr>
                 </thead>
                 <tbody>
-                    {allData.map((data:any) => {return <TableItem data={data} />})}
+                    {allData.map((data:any) => {return <TableItem key={data.id} data={data} headers={Headers}/>})}
                 </tbody>
             </table>
         </div>
